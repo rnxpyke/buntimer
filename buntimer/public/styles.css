@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(241, 251, 255);
+}
+
+
+header {
+    background-color: yellow;
+}
+
+main {
+    /* background-color: rgb(218, 218, 255); */
+}
+
+
+.tracker-bar {
+    display: flex;
+    gap: 2em;
+}
+
+.tracker-bar input {
+    flex-grow: 1;
+    height: 4em;
+    font-size: large;
+    padding: 1em;
+    margin: 8px;
+}
+
+.tracker-bar button {
+    width: 10em;
+    margin: 8px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.tracker-bar button.stop {
+    background-color: rgb(250, 142, 142);
+}
+
+.time-entry {
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    box-shadow: 5px 10px 12px 0px #d1d1d1, -4px -4px 19px 6px #ffffff;
+    border-radius: 0.25em;
+    background-color: #ffffff;
+}
+
+.time-entry form {
+    display: contents;
+}
+
+.time-entry input {
+    padding: 8px;
+}
+
+.time-entry input[type="text"] {
+    flex-grow: 1;
+    font-size: large;
+}
+
+.time-entry input[type="time"] {
+    font-size: large;
+}
+
+#entry-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

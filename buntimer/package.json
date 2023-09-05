@@ -1,0 +1,22 @@
+{
+  "name": "buntimer",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/main.tsx",
+    "test": "bun run --watch src/test.tsx",
+    "build": "bun build --compile --outfile bundle ./src/main.tsx",
+    "publish": "docker build . -t ghcr.io/rnxpyke/buntimer && docker push ghcr.io/rnxpyke/buntimer"
+  },
+  "devDependencies": {
+    "bun-types": "^0.5.0"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.6.1",
+    "elysia": "^0.6.11",
+    "html": "../html",
+    "jose": "^4.14.4",
+    "oauth4webapi": "^2.3.0",
+    "prql-js": "^0.9.3"
+  }
+}

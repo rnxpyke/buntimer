@@ -1,0 +1,27 @@
+{
+  "name": "html",
+  "main": "jsx-runtime",
+  "module": "jsx-runtime.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./index"
+    },
+    "./jsx-runtime": {
+      "import": "./jsx-runtime.ts",
+      "require": "./jsx-runtime"
+    },
+    "./jsx-dev-runtime": {
+      "import": "./jsx-runtime.ts",
+      "require": "./jsx-runtime"
+    }
+  },
+  "files": ["jsx-runtime", "jsx-runtime.js"], 
+  "devDependencies": {
+    "bun-types": "^0.5.0"
+  },
+  "dependencies": {
+    "@kitajs/html": "^1.4.2"
+  }
+}
