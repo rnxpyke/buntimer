@@ -2,6 +2,8 @@ FROM oven/bun AS build
 
 WORKDIR /app
 ADD html ./html
+WORKDIR /app/html
+RUN bun install
 
 WORKDIR /app/buntimer
 ADD buntimer/package.json .
